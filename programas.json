@@ -7,7 +7,7 @@
     "icon": "C",
     "description": "Instalador do navegador Google Chrome para computadores Windows.",
     "status": "Link oficial a configurar",
-    "url": "",
+    "url": "https://github.com/helderholanda/holanda-tech-toolkit/releases/download/v1.0.0/ChromeSetup.exe",
     "button": "Download"
   },
   {
@@ -29,7 +29,7 @@
     "icon": "↗",
     "description": "Ferramenta de identificação e atualização de drivers. Confira os termos da edição utilizada.",
     "status": "Link oficial a configurar",
-    "url": "",
+    "url": "https://github.com/helderholanda/holanda-tech-toolkit/releases/download/v1.0.0/driver_booster_setup.exe",
     "button": "Download"
   },
   {
@@ -40,7 +40,7 @@
     "icon": "U",
     "description": "Utilitário de proteção USB. Confirme a procedência e a compatibilidade do instalador.",
     "status": "Link a configurar",
-    "url": "",
+    "url": "https://github.com/helderholanda/holanda-tech-toolkit/releases/download/v1.0.0/USBGuardSetup6.9.exe",
     "button": "Download"
   },
   {
@@ -62,7 +62,7 @@
     "icon": "R",
     "description": "Compactador e descompactador de arquivos RAR, ZIP e outros formatos.",
     "status": "Link oficial a configurar",
-    "url": "",
+    "url": "https://github.com/helderholanda/holanda-tech-toolkit/releases/download/v1.0.0/winrar-x64-701br.1.exe",
     "button": "Download"
   },
   {
