@@ -93,3 +93,13 @@ button, input { font: inherit; }
   .hero { min-height: 350px; padding: 42px 7%; }.hero-art { right: -130px; opacity: .27; }.hero-content { max-width: 100%; }.hero h1 { font-size: 39px; }.hero p { max-width: 400px; }
   .catalog-section { padding: 34px 5% 20px; }.section-heading { align-items: stretch; flex-direction: column; }.search-wrap { width: 100%; }.tool-grid { grid-template-columns: 1fr; }.notice { margin: 12px 5% 25px; }.footer { padding: 17px 5%; gap: 10px; flex-direction: column; }
 }
+.tool-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tutorial-button {
+  background: transparent;
+  border: 1px solid var(--border);
+}
