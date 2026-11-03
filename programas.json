@@ -98,7 +98,7 @@
     "icon": "⌘",
     "description": "Ferramentas de manutenção do Windows desenvolvidas para a Holanda Informática.",
     "status": "Disponível para download",
-    "url": "https://github.com/helderholanda/holanda-tech-toolkit/releases/download/v1.0.0/kit-cmd-manutencao.cmd",
+    "url": "https://github.com/helderholanda/holanda-tech-toolkit/releases/download/v1.0.0/ATIVADOR-ASSISTENTE.cmd",
     "button": "Download"
   },
   {
@@ -108,8 +108,8 @@
     "tag": "HOLANDA",
     "icon": "✓",
     "description": "Assistente de preparação para serviços de formatação e manutenção.",
-    "status": "Arquivo local a integrar",
-    "url": "",
-    "button": "Em preparação"
+    "status": "Disponível para download",
+    "url": "https://github.com/helderholanda/holanda-tech-toolkit/releases/download/v1.0.0/SUPER_ASSISTENTE.PRE-FORMATACAO.cmd",
+    "button": "Download"
   }
 ]
