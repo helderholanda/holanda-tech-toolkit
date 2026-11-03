@@ -1,0 +1,11 @@
+HOLANDA INFORMATICA
+KIT CMD - MANUTENCAO DO WINDOWS
+
+Ferramenta de manutencao do Windows.
+
+INSTRUCOES:
+1. Baixe o arquivo kit-cmd-manutencao.cmd.
+2. Salve no computador.
+3. Clique com o botao direito.
+4. Selecione Executar como administrador.
+5. Escolha a operacao desejada no menu.
