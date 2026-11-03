@@ -75,19 +75,14 @@ input {
 .brand-mark {
   width: 42px;
   height: 42px;
-  border-radius: 12px;
   display: grid;
   place-items: center;
-  color: #f5d98e;
-  font-size: 23px;
-  font-weight: 850;
-  background:
-    linear-gradient(145deg, #243e60, #09172c);
-  border: 2px solid var(--gold);
-  box-shadow:
-    0 0 0 3px #c9a44e20,
-    0 7px 22px #00000066,
-    inset 0 0 12px #c9a44e22;
+  background: url("assets/logo-holanda.png") center / contain no-repeat;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 0;
+  color: transparent;
 }
 
 .brand strong {
