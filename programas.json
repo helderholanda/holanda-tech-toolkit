@@ -53,7 +53,7 @@
     "icon": "O",
     "description": "Acesso ao pacote de instalação do Office, com licenciamento válido e origem verificada.",
     "status": "Pacote a configurar",
-    "url": "",
+    "url": "https://github.com/helderholanda/holanda-tech-toolkit/releases/download/v1.0.0/office.exe",
     "button": "Abrir pacote"
   },
   {
