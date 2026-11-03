@@ -97,7 +97,7 @@
     "icon": "⌘",
     "description": "Ferramentas de manutenção do Windows desenvolvidas para a Holanda Informática.",
     "status": "Arquivo local a integrar",
-    "url": "",
+    "url": "https://raw.githubusercontent.com/helderholanda/holanda-tech-toolkit/main/scripts/kit-cmd-manutencao.cmd",
     "button": "Em preparação"
   },
   {
