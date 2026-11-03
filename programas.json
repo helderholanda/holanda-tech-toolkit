@@ -75,7 +75,7 @@
     "icon": "W",
     "description": "Ferramenta para criar mídia Windows em unidade USB, conforme os recursos da edição gratuita.",
     "status": "Link oficial a configurar",
-    "url": "",
+    "url": "https://github.com/helderholanda/holanda-tech-toolkit/releases/download/v1.0.0/WinToUSB_Free.exe",
     "button": "Download"
   },
   {
