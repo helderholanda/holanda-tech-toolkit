@@ -1,4 +1,3 @@
-
 :root {
   --navy: #071326;
   --navy-2: #0d1d35;
@@ -75,8 +74,8 @@ input {
 .brand-mark {
   width: 42px;
   height: 42px;
-  display: grid;
-  place-items: center;
+  flex-shrink: 0;
+  display: block;
   background: url("assets/logo-holanda.png") center / contain no-repeat;
   border: none;
   border-radius: 0;
@@ -438,15 +437,17 @@ input {
   inset: 7px;
   border: 1px solid #c9a44e66;
   border-radius: 20px;
+  pointer-events: none;
 }
 
 .hero-chip span {
-  color: var(--gold-light);
-  font-size: 80px;
-  font-weight: 850;
-  text-shadow:
-    0 4px 5px #00000099,
-    0 0 18px #c9a44e88;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: url("assets/logo-holanda.png") center / contain no-repeat;
+  color: transparent;
+  font-size: 0;
+  text-shadow: none;
   transform: rotate(9deg);
 }
 
@@ -816,7 +817,6 @@ input {
   .mobile-brand .brand-mark {
     width: 30px;
     height: 30px;
-    font-size: 17px;
   }
 
   .breadcrumb {
