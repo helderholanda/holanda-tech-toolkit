@@ -17,20 +17,67 @@ const search = document.getElementById("searchInput");
 async function loadTools() {
   try {
     const response = await fetch("programas.json");
-    if (!response.ok) throw new Error("Não foi possível carregar programas.json");
-    tools = await response.json();
+
+    if (!response.ok) {
+      throw new Error("Não foi possível carregar programas.json");
+    }
+
+    const data = await response.json();
+
+    if (!Array.isArray(data)) {
+      throw new Error("Formato inválido em programas.json");
+    }
+
+    tools = data;
     renderTools();
+
   } catch (error) {
-    grid.innerHTML = '<p class="load-error">Erro ao carregar o catálogo. Confira se o arquivo programas.json está publicado junto com index.html.</p>';
+    console.error(error);
+
+    grid.innerHTML = `
+      <p class="load-error">
+        Erro ao carregar o catálogo. Confira se o arquivo
+        programas.json está publicado junto com index.html.
+      </p>
+    `;
   }
+}
+
+function createActionButton(text, url, extraClass = "") {
+  const button = document.createElement("button");
+
+  button.className = "download-button ready " + extraClass;
+  button.textContent = text;
+
+  button.addEventListener("click", () => {
+    const link = document.createElement("a");
+
+    link.href = url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  });
+
+  return button;
 }
 
 function renderTools() {
   const term = search.value.trim().toLocaleLowerCase("pt-BR");
 
   const filtered = tools.filter(tool => {
-    const categoryMatch = activeCategory === "all" || tool.category === activeCategory;
-    const text = `${tool.name} ${tool.description} ${tool.tag}`.toLocaleLowerCase("pt-BR");
+    const categoryMatch =
+      activeCategory === "all" ||
+      tool.category === activeCategory;
+
+    const text = `
+      ${tool.name || ""}
+      ${tool.description || ""}
+      ${tool.tag || ""}
+    `.toLocaleLowerCase("pt-BR");
+
     return categoryMatch && text.includes(term);
   });
 
@@ -39,7 +86,9 @@ function renderTools() {
 
   filtered.forEach(tool => {
     const ready = Boolean(tool.url && tool.url.trim());
-    const tutorialReady = Boolean(tool.tutorialUrl && tool.tutorialUrl.trim());
+    const tutorialReady = Boolean(
+      tool.tutorialUrl && tool.tutorialUrl.trim()
+    );
 
     const card = document.createElement("article");
     card.className = "tool-card";
@@ -53,15 +102,18 @@ function renderTools() {
 
     const tag = document.createElement("span");
     tag.className = "tool-tag";
-    tag.textContent = tool.tag || categoryNames[tool.category] || "FERRAMENTA";
+    tag.textContent =
+      tool.tag ||
+      categoryNames[tool.category] ||
+      "FERRAMENTA";
 
     top.append(icon, tag);
 
     const title = document.createElement("h3");
-    title.textContent = tool.name;
+    title.textContent = tool.name || "Ferramenta";
 
     const desc = document.createElement("p");
-    desc.textContent = tool.description;
+    desc.textContent = tool.description || "";
 
     const bottom = document.createElement("div");
     bottom.className = "tool-bottom";
@@ -82,33 +134,36 @@ function renderTools() {
     const actions = document.createElement("div");
     actions.className = "tool-actions";
 
-    const button = document.createElement("button");
-    button.className = "download-button" + (ready ? " ready" : "");
-    button.textContent = ready ? (tool.button || "Download") : "Em preparação";
-    button.disabled = !ready;
-
     if (ready) {
-      button.addEventListener("click", () => {
-        window.open(tool.url, "_blank", "noopener,noreferrer");
-      });
+      const button = createActionButton(
+        tool.button || "Download",
+        tool.url
+      );
+
+      actions.append(button);
+    } else {
+      const button = document.createElement("button");
+
+      button.className = "download-button";
+      button.textContent = "Em preparação";
+      button.disabled = true;
+
+      actions.append(button);
     }
 
-    actions.append(button);
-
     if (tutorialReady) {
-      const tutorialButton = document.createElement("button");
-      tutorialButton.className = "download-button ready tutorial-button";
-      tutorialButton.textContent = tool.tutorialButton || "Abrir tutorial";
-
-      tutorialButton.addEventListener("click", () => {
-        window.open(tool.tutorialUrl, "_blank", "noopener,noreferrer");
-      });
+      const tutorialButton = createActionButton(
+        tool.tutorialButton || "Abrir tutorial",
+        tool.tutorialUrl,
+        "tutorial-button"
+      );
 
       actions.append(tutorialButton);
     }
 
     bottom.append(status, actions);
     card.append(top, title, desc, bottom);
+
     grid.append(card);
   });
 }
@@ -119,12 +174,14 @@ function setCategory(category) {
   document.querySelectorAll("[data-category]").forEach(button => {
     button.classList.toggle(
       "active",
-      button.classList.contains("nav-item") && button.dataset.category === category
+      button.classList.contains("nav-item") &&
+      button.dataset.category === category
     );
 
     button.classList.toggle(
       "selected",
-      button.classList.contains("pill") && button.dataset.category === category
+      button.classList.contains("pill") &&
+      button.dataset.category === category
     );
   });
 
@@ -132,11 +189,14 @@ function setCategory(category) {
 }
 
 document.querySelectorAll("[data-category]").forEach(button => {
-  button.addEventListener("click", () => setCategory(button.dataset.category));
+  button.addEventListener("click", () => {
+    setCategory(button.dataset.category);
+  });
 });
 
 search.addEventListener("input", renderTools);
 
-document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("year").textContent =
+  new Date().getFullYear();
 
 loadTools();
