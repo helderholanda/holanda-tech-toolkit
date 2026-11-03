@@ -1,0 +1,112 @@
+[
+  {
+    "id": "chrome",
+    "name": "Google Chrome",
+    "category": "utilities",
+    "tag": "NAVEGADOR",
+    "icon": "C",
+    "description": "Instalador do navegador Google Chrome para computadores Windows.",
+    "status": "Link oficial a configurar",
+    "url": "",
+    "button": "Download"
+  },
+  {
+    "id": "deep-freeze",
+    "name": "Deep Freeze Standard",
+    "category": "utilities",
+    "tag": "RESTAURAÇÃO",
+    "icon": "D",
+    "description": "Ferramenta de restauração e proteção de configuração do computador. Verifique a licença antes de instalar.",
+    "status": "Verificar licença e link",
+    "url": "",
+    "button": "Download"
+  },
+  {
+    "id": "driver-booster",
+    "name": "Driver Booster",
+    "category": "drivers",
+    "tag": "DRIVERS",
+    "icon": "↗",
+    "description": "Ferramenta de identificação e atualização de drivers. Confira os termos da edição utilizada.",
+    "status": "Link oficial a configurar",
+    "url": "",
+    "button": "Download"
+  },
+  {
+    "id": "usbguard",
+    "name": "USBGuard 6.9",
+    "category": "security",
+    "tag": "SEGURANÇA",
+    "icon": "U",
+    "description": "Utilitário de proteção USB. Confirme a procedência e a compatibilidade do instalador.",
+    "status": "Link a configurar",
+    "url": "",
+    "button": "Download"
+  },
+  {
+    "id": "office",
+    "name": "Microsoft Office",
+    "category": "office",
+    "tag": "PRODUTIVIDADE",
+    "icon": "O",
+    "description": "Acesso ao pacote de instalação do Office, com licenciamento válido e origem verificada.",
+    "status": "Pacote a configurar",
+    "url": "",
+    "button": "Abrir pacote"
+  },
+  {
+    "id": "winrar",
+    "name": "WinRAR",
+    "category": "utilities",
+    "tag": "COMPACTAÇÃO",
+    "icon": "R",
+    "description": "Compactador e descompactador de arquivos RAR, ZIP e outros formatos.",
+    "status": "Link oficial a configurar",
+    "url": "",
+    "button": "Download"
+  },
+  {
+    "id": "wintousb",
+    "name": "WinToUSB Free",
+    "category": "windows",
+    "tag": "INSTALAÇÃO",
+    "icon": "W",
+    "description": "Ferramenta para criar mídia Windows em unidade USB, conforme os recursos da edição gratuita.",
+    "status": "Link oficial a configurar",
+    "url": "",
+    "button": "Download"
+  },
+  {
+    "id": "windows-iso",
+    "name": "Imagem do Windows",
+    "category": "windows",
+    "tag": "SISTEMA",
+    "icon": "▣",
+    "description": "Acesso à imagem oficial do Windows para instalação ou recuperação do sistema.",
+    "status": "Link oficial a configurar",
+    "url": "",
+    "button": "Acessar"
+  },
+  {
+    "id": "kit-cmd",
+    "name": "KIT CMD - Manutenção",
+    "category": "windows",
+    "tag": "HOLANDA",
+    "icon": "⌘",
+    "description": "Ferramentas de manutenção do Windows desenvolvidas para a Holanda Informática.",
+    "status": "Arquivo local a integrar",
+    "url": "",
+    "button": "Em preparação"
+  },
+  {
+    "id": "pre-formatacao",
+    "name": "Assistente Pré-Formatação",
+    "category": "windows",
+    "tag": "HOLANDA",
+    "icon": "✓",
+    "description": "Assistente de preparação para serviços de formatação e manutenção.",
+    "status": "Arquivo local a integrar",
+    "url": "",
+    "button": "Em preparação"
+  }
+]

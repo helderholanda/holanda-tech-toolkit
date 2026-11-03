@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Holanda Tech Toolkit — central de ferramentas para manutenção, instalação e suporte técnico.">
+  <title>Holanda Tech Toolkit | Holanda Informática</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="Holanda Tech Toolkit - início">
+        <span class="brand-mark">H</span>
+        <span><strong>HOLANDA</strong><small>TECH TOOLKIT</small></span>
+      </a>
+      <div class="side-label">MENU PRINCIPAL</div>
+      <nav class="side-nav" aria-label="Navegação principal">
+        <button class="nav-item active" data-category="all"><span>▦</span> Visão geral</button>
+        <button class="nav-item" data-category="windows"><span>▣</span> Windows</button>
+        <button class="nav-item" data-category="office"><span>▤</span> Office</button>
+        <button class="nav-item" data-category="drivers"><span>⚙</span> Drivers</button>
+        <button class="nav-item" data-category="utilities"><span>⌘</span> Utilitários</button>
+        <button class="nav-item" data-category="security"><span>◇</span> Segurança</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-note">
+          <span class="status-dot"></span>
+          <div><strong>Central de ferramentas</strong><small>Versão inicial • 1.0.0</small></div>
+        </div>
+        <small class="copyright">HOLANDA INFORMÁTICA<br>Ferramentas para suporte técnico</small>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark">H</span><strong>HOLANDA TECH</strong></div>
+        <div class="breadcrumb">Holanda Informática <span>/</span> <strong>Toolkit</strong></div>
+        <a class="github-link" href="https://github.com/" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+      </header>
+
+      <section class="hero">
+        <div class="hero-content">
+          <div class="eyebrow"><span class="eyebrow-line"></span> CENTRAL DE SUPORTE TÉCNICO</div>
+          <h1>Suas ferramentas.<br><span>Em um só lugar.</span></h1>
+          <p>Uma central organizada para encontrar instaladores, utilitários e recursos essenciais para manutenção e configuração de computadores.</p>
+          <div class="hero-actions">
+            <a href="#catalogo" class="primary-button">Explorar ferramentas <span>↓</span></a>
+            <span class="version-tag">HOLANDA TECH TOOLKIT <b>v1.0</b></span>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="hero-chip chip-main"><span>H</span></div>
+          <div class="floating-card card-top"><i>⌘</i><span>TOOLS</span></div>
+          <div class="floating-card card-bottom"><i>✓</i><span>READY</span></div>
+          <div class="art-glow"></div>
+        </div>
+      </section>
+
+      <section class="catalog-section" id="catalogo">
+        <div class="section-heading">
+          <div><div class="eyebrow dark">BIBLIOTECA</div><h2>Catálogo de ferramentas</h2><p>Selecione uma categoria ou pesquise pelo nome.</p></div>
+          <div class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar ferramenta..." aria-label="Buscar ferramenta"></div>
+        </div>
+
+        <div class="category-pills" id="categoryPills">
+          <button class="pill selected" data-category="all">Todas</button>
+          <button class="pill" data-category="windows">Windows</button>
+          <button class="pill" data-category="office">Office</button>
+          <button class="pill" data-category="drivers">Drivers</button>
+          <button class="pill" data-category="utilities">Utilitários</button>
+          <button class="pill" data-category="security">Segurança</button>
+        </div>
+
+        <div class="tool-grid" id="toolGrid" aria-live="polite"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <span>⌕</span><strong>Nenhuma ferramenta encontrada</strong><p>Tente outro termo ou selecione outra categoria.</p>
+        </div>
+      </section>
+
+      <section class="notice">
+        <div class="notice-icon">i</div>
+        <div><strong>Sobre os downloads</strong><p>Os botões serão habilitados conforme os pacotes forem publicados. Sempre confira a origem dos arquivos e os requisitos de licença antes de instalar.</p></div>
+      </section>
+
+      <footer class="footer">
+        <span>© <span id="year"></span> Holanda Informática</span>
+        <span>HOLANDA TECH TOOLKIT <b>•</b> FEITO PARA SUPORTE TÉCNICO</span>
+      </footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
