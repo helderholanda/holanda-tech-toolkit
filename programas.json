@@ -11,15 +11,17 @@
     "button": "Download"
   },
   {
-    "id": "deep-freeze",
-    "name": "Deep Freeze Standard",
-    "category": "utilities",
-    "tag": "RESTAURAÇÃO",
-    "icon": "D",
-    "description": "Ferramenta de restauração e proteção de configuração do computador. Verifique a licença antes de instalar.",
-    "status": "Verificar licença e link",
-    "url": "",
-    "button": "Download"
+  "id": "deep-freeze",
+  "name": "Deep Freeze Standard",
+  "category": "utilities",
+  "tag": "RESTAURAÇÃO",
+  "icon": "D",
+  "description": "Ferramenta de restauração e proteção de configuração do computador.",
+  "status": "Instalador e tutorial disponíveis",
+  "url": "https://github.com/helderholanda/holanda-tech-toolkit/releases/download/v1.0.0/Deep.Freeze.Standard.v8.30.060.4589.exe",
+  "button": "Download",
+  "tutorialUrl": "https://raw.githubusercontent.com/helderholanda/holanda-tech-toolkit/main/tutoriais/deep-freeze.txt",
+  "tutorialButton": "Abrir tutorial"
   },
   {
     "id": "driver-booster",
