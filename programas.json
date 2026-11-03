@@ -90,15 +90,15 @@
     "button": "Acessar"
   },
   {
-    "id": "kit-cmd",
-    "name": "KIT CMD - Manutenção",
-    "category": "windows",
-    "tag": "HOLANDA",
-    "icon": "⌘",
-    "description": "Ferramentas de manutenção do Windows desenvolvidas para a Holanda Informática.",
-    "status": "Arquivo local a integrar",
-    "url": "https://raw.githubusercontent.com/helderholanda/holanda-tech-toolkit/main/scripts/kit-cmd-manutencao.cmd",
-    "button": "Em preparação"
+  "id": "kit-cmd",
+  "name": "KIT CMD - Manutenção",
+  "category": "windows",
+  "tag": "HOLANDA",
+  "icon": "⌘",
+  "description": "Ferramentas de manutenção do Windows desenvolvidas para a Holanda Informática.",
+  "status": "Disponível para download",
+  "url": "https://raw.githubusercontent.com/helderholanda/holanda-tech-toolkit/main/scripts/kit-cmd-manutencao.cmd",
+  "button": "Baixar CMD"
   },
   {
     "id": "pre-formatacao",
